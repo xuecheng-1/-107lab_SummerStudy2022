@@ -60,7 +60,7 @@ Django 慕课教程使用指南：http://www.imooc.com/wiki/djangolesson
 
 ## 作业时间
 
-7月17号至7月25号晚上12点
+6月27号至7月7号晚上12点
 
 
 
