@@ -1,0 +1,305 @@
+.banxin {
+    width: 100%;
+}
+
+.w {
+    width: 1025px;
+    margin: 0 auto;
+}
+
+.top {
+    width: 100%;
+    height: 170px;
+    background: url(../image/backgroundimg.png) no-repeat right;
+    position: relative;
+    background-color: #fff;
+}
+
+.top img {
+    width: 730px;
+    height: 98px;
+    margin-top: 25px;
+    margin-left: 15px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul li,
+ol li {
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* 导航栏 */
+
+.w1 {
+    width: 1023px;
+    height: 42px;
+    margin: auto;
+}
+
+.nav {
+    background-color: #fffeff;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.nav>ul {
+    list-style: none;
+    float: right;
+    height: 44px;
+}
+
+.nav>ul>li {
+    float: right;
+    background-color: #fff;
+    font-size: 14px;
+    height: 100%;
+    position: relative;
+}
+
+.nav>ul>li:hover {
+    color: #ba114a;
+    animation: changeColor 2s infinite;
+    animation-delay: 3s;
+}
+
+.nav>ul>li:last-child a {
+    background-color: #ba114a;
+    border-radius: 10px;
+}
+
+.nav>ul>li:last-child:hover a {
+    background-color: #fff;
+}
+
+.nav>ul>li:nth-child(4) a span {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px solid;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+
+.nav>ul>li>a {
+    text-decoration: none;
+    color: #a8a7a2;
+    display: block;
+    text-align: center;
+    /* text-transform: uppercase; */
+    padding: 10px 15px;
+}
+
+.nav>ul>li a:hover {
+    color: #ba114a;
+}
+
+.nav ul li .navs {
+    display: none;
+    background-color: #000;
+    opacity: .5;
+    position: absolute;
+    width: 204px;
+    left: 0px;
+    top: 44px;
+    z-index: 44;
+    padding-top: 5px;
+}
+
+.nav ul li:hover .navs {
+    display: block;
+}
+
+.nav ul li .navs a {
+    display: block;
+    padding: 10px 20px;
+    clear: both;
+    font-weight: 400;
+    color: #fff;
+}
+
+.nav ul li .navs a:hover {
+    background-color: #a8a7a2;
+    color: white;
+}
+
+.w4 {
+    width: 4144px;
+    height: 25px;
+    margin: auto;
+    margin-top: 18px;
+    background-color: #04628d;
+}
+
+.w5 {
+    width: 660px;
+    height: 60px;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+.copy {
+    width: 660px;
+    height: 60px;
+    background-color: #d6e8f4;
+    position: relative;
+    /* overflow: hidden;
+    text-overflow: ellipsis; */
+}
+
+.copy p {
+    position: absolute;
+    margin-left: 12px;
+}
+
+.copy a {
+    text-decoration: none;
+    color: #221731;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.copy a:hover {
+    color: #ba114a;
+}
+
+.btnsss {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 30px;
+    background-color: palegreen;
+    left: 50%;
+    margin-left: 530px;
+    cursor: pointer;
+}
+
+.btnsss:hover {
+    background-color: #0494c9;
+}
+
+.btnsss img {
+    width: 50px;
+    height: 50px;
+}
+
+.commondown {
+    width: 100%;
+    height: 100px;
+    background-color: #ececec;
+}
+
+.icon {
+    margin-left: 50%;
+}
+
+.icon li {
+    float: left;
+    margin-right: 15px;
+    line-height: 100px;
+    list-style: none;
+}
+
+.icon a {
+    text-decoration: none;
+    color: #a8a7a2;
+    font-size: 30px;
+}
+
+.icon a:hover {
+    color: #ba114a;
+}
+
+.bottombanxin {
+    margin: auto;
+    width: 100%;
+    height: 210px;
+    /* background-color: black; */
+}
+
+.bottomzhongjian {
+    margin: auto;
+    width: 100%;
+    height: 100px;
+    /* background-color: #d6e8f4; */
+}
+
+.bottom {
+    width: 100%;
+    height: 100px;
+    /* background-color: #0494c9; */
+}
+.bbbanxin{
+    margin: auto;
+    width: 100%;
+    height: 110px;
+    background-color: black;
+}
+.bbbanxinxin{
+    margin: auto;
+    width: 975px;
+    height: 110px;
+    /* background-color: #d6e8f4; */
+}
+.bottomleft {
+    float: left;
+    width: 517px;
+    height: 100px;
+    background-color: black;
+}
+
+.bottomleft ul {
+    float: left;
+}
+
+.bottomleft ul li {
+    float: left;
+    margin-left: 5px;
+    line-height: 80px;
+    list-style: none;
+}
+
+.bottomleft ul li a {
+    text-decoration: none;
+    color: gray;
+    font-size: small;
+}
+
+.bottomleft ul li a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.bottomright {
+    float: left;
+    width: 458px;
+    height: 100px;
+    background-color: black;
+}
+.bottomright p{
+    color: gray;
+}
+.bottom p {
+    color: gray;
+}
+
+.bottomright p a {
+    text-decoration: none;
+    color: gray;
+}
+
+.bottomright p a:hover {
+    color: white;
+    text-decoration: underline;
+}
