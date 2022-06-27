@@ -1,0 +1,51 @@
+.aboutmidbanxin{
+    margin: auto;
+    width: 100%;
+    height: 400px;
+    background-color: white;
+}
+.topimg{
+    margin: auto;
+    width: 100%;
+    height: 200px;
+    /* position: absolute;
+    z-index: 1; */
+}
+.topimgmid h1{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    color: white;
+    line-height: 200px;
+    font-size: 50px;
+}
+.topimg img{
+    width: 100%;
+    height: 200px;
+}
+.topimgmid{
+    margin: auto;
+    width: 1000px;
+    height: 150px;
+    /* background-color: violet; */
+    position: relative;
+    margin-top: -200px
+}
+.aboutmid{
+    margin: auto;
+    width: 562px;
+    height: 300px;
+    background-color: white;
+    margin-top: 40px;
+    border: 1px solid #dcdcdc;
+}
+.aboutmid h2{
+    text-align: center;
+}
+.aboutmid h3{
+    margin-left: 20px;
+    line-height: 40px;
+}
+.aboutmid p{
+    margin-left: 20px;
+}

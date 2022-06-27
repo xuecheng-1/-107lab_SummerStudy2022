@@ -1,0 +1,87 @@
+.aboutmidbanxin{
+    margin: auto;
+    width: 100%;
+    height: 1600px;
+    background-color: white;
+}
+.topimg{
+    margin: auto;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    z-index: 1;
+    background-color: black;
+}
+.topimgmid h2{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    color: white;
+}
+.topimgmid{
+    margin: auto;
+    width: 850px;
+    height: 50px;
+    background-color: black;
+    position: relative;
+}
+.aboutmid{
+    margin: auto;
+    width: 900px;
+    height: 1500px;
+    background-color: white;
+}
+.adleft{
+    width: 135px;
+    height: 150px;
+    background-color: white;
+    float: left;
+    margin-right: 15px;
+    margin-top: 50px;
+}
+.adleft p{
+    font-size: x-small;
+}
+.aboutmid a{
+    text-decoration: none;
+    color: black;
+}
+.adleft a:hover{
+    text-decoration: underline;
+    color: #7e2e4b;
+}
+.adright{
+    width: 750px;
+    height: 1000px;
+    background-color: rgb(236, 185, 232);
+    float: left;
+    margin-top: 50px;
+}
+.adrightup{
+    width: 750px;
+    height: 50px;
+    background-color: white;
+}
+.adrightup h2{
+    color: #a32258;
+    cursor: pointer;
+}
+.adrightdown{
+    width: 750px;
+    height: 1000px;
+    background-color: white;
+}
+.adrightdown tr{
+    text-align: center;
+}
+.first{
+    cursor: pointer;
+}
+.expect a{
+    text-decoration: none;
+    color: black;
+    font-size: small;
+}
+.expect a:hover{
+    text-decoration: underline;
+}
