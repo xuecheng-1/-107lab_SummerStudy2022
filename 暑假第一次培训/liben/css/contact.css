@@ -1,0 +1,66 @@
+#bottom2{
+	width: auto;
+	height: 50px;
+	background-color: #ECECEC;
+	position: relative;
+	top: 20px;
+	text-align: center;
+}
+
+#bottom3{
+	width: auto;
+	height:100px;
+	background-color: #000;
+}
+#bottom3text1{
+	width: 500px;
+	height: 100px;
+	top: auto;
+	left: 300px;
+	position: relative;
+}
+#bottom3text1>a{
+	color: white;
+	position: relative;
+	top: 30px;
+	padding: 0px 5px ;
+}
+#bottom3text2{
+	width: 500px;
+	height: 50px;
+	top: -50px;
+	left: 800px;
+	position: relative;
+
+}
+#top1pic2{
+	position: relative;
+	top: -30px;
+	right: -200px;
+}
+#top1text{
+	position: relative;
+	top: -5px;
+	width: auto;
+	height: 20px;
+}
+#top1text>a{
+	float: right;
+    padding: 0PX 8PX;
+    color: gray;
+}
+a {
+    text-decoration: none;
+    -webkit-transition: color 0.2s linear;
+    -moz-transition: color 0.2s linear;
+    -o-transition: color 0.2s linear;
+    transition: color 0.2s linear;
+}
+#contact{
+    background-color: red;
+    border-radius: 5px;
+}
+#center>img{
+     position: relative;
+     left: 400px;
+}
