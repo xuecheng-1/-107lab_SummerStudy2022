@@ -1,0 +1,10 @@
+.box-co {
+    height: 400px;
+    margin-top: 35px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.box-co .content {
+    padding: 30px;
+}

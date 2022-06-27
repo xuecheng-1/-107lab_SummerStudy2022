@@ -1,0 +1,46 @@
+.about {
+    background: #181015;
+}
+
+.left h2 {
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.left ul li a {
+    float: left;
+    display: block;
+    color: #000;
+    font-size: 1.5em;
+}
+
+.left ul li a:hover {
+    text-decoration: underline;
+}
+
+.left ul li:nth-child(1) a {
+    color: #b6124a;
+}
+
+.right h3 {
+    font-size: 3em;
+    color: #b6124a;
+    cursor: pointer;
+}
+
+.table td,
+.table th {
+    border: 1px solid #ccc;
+}
+
+.table a {
+    color: #000;
+}
+
+.table a:hover {
+    text-decoration: underline;
+}
+
+.table .firstRow {
+    background-color: #f7f7f7;
+}

@@ -1,0 +1,24 @@
+.box-re {
+    padding: 28px 15px;
+    height: 300px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+}
+
+.unsuit {
+    padding-bottom: 0 !important;
+}
+
+.box-re h3 {
+    margin-top: 0;
+}
+
+.box-re h3 a {
+    display: block;
+    color: #000;
+}
+
+.box-re h3 a:hover {
+    text-decoration: underline;
+    color: #337ab7;
+}

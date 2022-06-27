@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?mci87e');
+    src: url('../fonts/icomoon.eot?mci87e#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?mci87e') format('truetype'),
+        url('../fonts/icomoon.woff?mci87e') format('woff'),
+        url('../fonts/icomoon.svg?mci87e#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+/* head */
+.navbar {
+    margin: 0;
+    background: url(../images/backgroundimg.png) no-repeat right top;
+    border-bottom: 2px solid #b6124a;
+}
+
+.navbar-header img {
+    margin-top: 25px;
+}
+
+.navbar-nav li.active a {
+    background-color: #b6124a;
+    color: #fff;
+}
+
+.navbar-nav li.active a:hover {
+    background-color: #fff;
+    color: #b6124a;
+}
+
+.navbar-nav li a {
+    display: block;
+    padding: 12px 15px;
+    border-radius: 5px;
+    line-height: 20px;
+    font-size: 15px;
+    font-family: 'Oswald', sans-serif;
+    color: #999;
+}
+
+.navbar-nav li a:hover {
+    color: #b6124a;
+}
+
+.about {
+    height: 100px;
+    background: url(../images/banner1.jpg) 0 -56px no-repeat;
+    border-bottom: 2px solid #b6124a;
+}
+
+.about h1 {
+    font-weight: normal;
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+}
+
+/* footer */
+footer {
+    border-top: 1px solid #e5e5e5;
+    background: #ECECEC;
+    margin-top: 40px;
+}
+
+footer .social {
+    margin: 20px 0;
+    text-align: center;
+}
+
+footer .social span {
+    margin: 0 10px;
+    font-family: 'icomoon';
+    font-size: 30px;
+    color: #999;
+}
+
+footer .social span:hover {
+    color: #b6124a;
+}
+
+footer .black-color {
+    padding: 15px 0;
+    background-color: #000;
+    font-size: 12px;
+    color: #999;
+}
+
+footer .container a {
+    display: inline-block;
+    font-size: 12px;
+    color: #999;
+}
+
+footer .container a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+@media (max-width:768px) {
+    .container p {
+        text-align: center !important;
+    }
+}

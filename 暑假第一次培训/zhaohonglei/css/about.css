@@ -1,0 +1,18 @@
+section.container .box-m {
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+}
+
+section.container .box-m img {
+    vertical-align: middle;
+    margin: 0 10px;
+}
+
+h3 {
+    font-family: 'Oswald', sans-serif;
+}
+
+p {
+    color: black;
+}
