@@ -1,0 +1,148 @@
+.header {
+    margin-top: 28px;
+}
+
+li {
+    list-style: none;
+}
+
+.right-back {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.daohang {
+    background-color: #fff;
+    border: none;
+}
+
+.navbar-nav>.active>a {
+    background: #b6124a;
+    color: #FFFFFF;
+    border-radius: 5px;
+}
+
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+    color: #fff;
+    background-color: #b6124a;
+}
+
+.navbar {
+    margin-bottom: 0;
+
+}
+
+@media screen and (max-width:750px) {
+
+    .carousel,
+    .carousel img {
+        width: 100%;
+        height: 251px !important;
+    }
+
+    .zj-li li {
+        height: 30px;
+    }
+}
+
+.dilan {
+    width: 100%;
+    height: 85px;
+    background-color: #ececec;
+    margin-top: 70px;
+    padding-top: 20px;
+}
+
+.dilan-img img {
+    display: block;
+    margin: auto;
+}
+
+.zhh {
+    height: 60px;
+    background-color: #222222;
+}
+
+.zhh .container {
+    color: #8c8c8c;
+    padding-top: 10px;
+    font-size: 12px;
+}
+
+.zhh a {
+    display: inline-block;
+    padding: 10px;
+}
+
+.zhh-r {
+    float: right;
+}
+.head {
+    height: 100px;
+    min-height: 100px;
+    padding-top: 0px;
+    background: #181015 url(../img/banner12.jpg) 0px -56px no-repeat;
+    background-size: auto;
+    background-size: cover;
+    text-align: left;
+}
+
+.ab {
+    padding-top: 10px;
+}
+
+.ab h1 {
+    color: #fff;
+}
+.left>.ll>li {
+    float: left;
+    margin: 5px 10px;
+    min-width: 150px;
+}
+.left .ll {
+    font-size: 1.5em;
+    padding-left: 0;
+    position: relative;
+}
+ul {
+    margin-top: 0;
+    margin-bottom: 10px;
+    margin-left: -10px;
+    list-style: none;
+}
+.ll a{
+ color:#181015;
+}
+.right tbody a {
+    color: black;
+}
+tbody {
+    margin-top: 20px;
+}
+.firstRow{
+    background-color: #f7f7f7;
+}
+.table>tbody>tr>td,
+.table>tbody>tr>th,
+.table>tfoot>tr>td,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
+.table>thead>tr>th {
+    border: 1px solid #ddd;
+}
+.zhh a {
+    color: #aaaaaa;
+}
+
+.zhh a:hover {
+    color: #FFFFFF;
+}
+@media screen and (max-width: 992px) {
+    .zhh {
+        height: 90px;
+    }
+}
