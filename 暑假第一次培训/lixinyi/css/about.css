@@ -1,0 +1,42 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.mid11 {
+	position: absolute;
+	margin-top: 170px;
+	width: 100%;
+	height: 80px;
+	background-image: url(../images/banner1.jpg);
+}
+.mid11 span{
+	color: aliceblue;
+	font-size: 30px;
+	padding-left: 210px;
+	line-height: 80px;
+}
+.mid2 img {
+	width: 300px;
+	float: left;
+	margin-right: 20px;
+	padding-bottom: 20px;
+}
+
+.mid22 {
+	
+	margin-top: 250PX;
+}
+.row{
+	margin-top: 30px;
+
+
+}
+.mid2{
+	
+	border: 2px solid #ECECEC;
+}
+.mid2 p{
+	text-indent: 2em;
+	
+}
