@@ -1,0 +1,50 @@
+
+.activer{
+    background-color:brown;
+    border-radius: 6px;
+}
+.activer a{ color:white;
+    font-weight:bold;
+}
+ul li a{
+    color:grey;
+    font-weight:bold;
+}
+ul li a:hover{
+    color:brown;
+}
+.erul{
+    background-color: black;
+}
+.erul li a{color:white;}
+.erui li:hover{background-color: grey;}
+h2{color:black;}
+#footer{
+    margin-top:50px;
+   color:white;
+}
+#footer a{color:white;}
+.footer1{
+    background-color: #DDDDDD;
+    height:100px;
+}
+.footer2{
+    background-color: black;
+}
+h3,h4{color:black;font-weight: bold;}
+
+p{font-size:15px;}
+ul li{color:black;}
+.fa:hover{
+    opacity:0.9;
+    color:brown;
+}
+.fa{
+padding:20px;
+font-size:380px;
+width:30px;
+text-decoration:none;
+margin:5px 10px;    
+color:grey;
+}
+
