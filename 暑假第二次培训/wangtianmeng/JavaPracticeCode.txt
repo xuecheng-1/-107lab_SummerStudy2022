@@ -1,0 +1,384 @@
+#include<stdio.h>
+#include<easyx.h>
+#include<time.h>
+#include<stdlib.h>
+#include<math.h>
+
+
+/*全局变量*/
+int g_score = 0;        //分数
+/*创建很多的气球，抽象气球的属性，封装成一个结构体*/
+struct Ballon
+{
+	double x;
+	double y;
+	COLORREF color;
+	double vx;   //气球的移动速度
+	double vy;
+};
+void ballon_init(Ballon* ball, double x, double y)
+{
+	ball->x = x;
+	ball->y = y;
+	ball->color = RGB(rand() % 256, rand() % 256, rand() % 256);
+	ball->vx = 0.0;//(rand() % 10) / 10 + 0.1;
+	ball->vy = -((rand() % 10) / 30.0 + 0.1);
+
+}
+void ballon_draw(Ballon* ball)
+{
+		//绘图
+		// 设置填充颜色
+		setfillcolor(ball->color);
+		//设置线条颜色
+		setlinecolor(WHITE);
+		setlinestyle(PS_SOLID,1);
+		//绘制一个椭圆
+		solidellipse(ball->x,ball->y, ball->x+30, ball->y+60);
+		//绘制一段圆弧
+		arc(ball->x + 5, ball->y + 5, ball->x + 30 - 5, ball->y + 60 - 5, 0, 1.2);
+		//绘制尾巴
+		arc(ball->x, ball->y + 60, ball->x + 30 - 10, ball->y + 60 + 20, 0, 1.2);
+}
+void ballon_moveby(Ballon* ball, double dx, double dy)
+{
+	ball->x += dx;
+	ball->y += dy;
+	//如果气球超出边界，让它从下面开始升起
+	if (ball->y + 60 < 0)
+	{
+		ball->y = getheight();
+		ball->x = rand() % getwidth();
+	}
+}
+
+/*设置炮台*/
+struct Battery
+{
+double x;
+double y;
+double cx;//变化的坐标
+double cy;
+double radian;//弧度
+double len;//炮管长度
+
+};
+void bat_init(Battery* bat, double x, double y)
+{
+	bat->x = x;
+	bat->y = y;
+	bat->len = 70;
+	bat->cx = bat->x;
+	bat->cy = bat->y-bat->len;
+	bat->radian = 0;
+	
+}
+void bat_draw(Battery* bat)
+{
+	//绘制炮台
+	setlinecolor(RED);
+	//设置线条的样式
+	setlinestyle(PS_SOLID, 3);
+	circle(bat->x, bat->y, 60);
+	//绘制圆心
+	setfillcolor(WHITE);
+	solidcircle(bat->x, bat->y, 5);
+	//绘制炮管
+	setlinecolor(WHITE);
+	setlinestyle(PS_SOLID, 5);
+	line(bat->x, bat->y, bat->cx, bat->cy);
+
+}
+void bat_onMessage(Battery* bat, ExMessage* msg)
+{
+	//根据鼠标的坐标求出弧度
+	bat->radian = atan2(bat->y - msg->y, msg->x - bat->x);
+	//根据弧度求出当前炮管的位置
+	bat->cx = bat->x + cos(bat->radian) * bat->len;
+	bat->cy = bat->y - sin(bat->radian) * bat->len;
+
+}
+/*创建子弹  x,y,color
+和气球类似，多了一个碰撞检测
+*/
+void zidan()
+{
+
+}
+void shotBullet()
+{
+	printf("shotBullet\n");
+}
+
+void draw()
+{
+	//绘制分数
+	//把整数格式化成字符串
+	char score[20] = "";
+	sprintf(score, "score:%d", g_score);
+	outtextxy(0, 0, score);
+}
+int main()
+{
+	//创建窗口
+	initgraph(480, 540,EW_SHOWCONSOLE);
+	//设置随机数种子
+	srand(time(NULL));
+	//设置背景模式
+	setbkmode(TRANSPARENT);
+	//设置背景图片
+	IMAGE bkimg;
+	//加载到bkimg
+	loadimage(&bkimg, "./气球游戏背景.jpg", getwidth(), getheight());
+
+	Ballon balls[15] = { 0 };
+	for (int i = 0; i < 15; i++)
+	{
+		ballon_init(balls + i, rand() % 480, rand() % 540);       //&balls[i]
+		ballon_draw(balls + i);
+	}
+
+	Battery bat = { 0 };
+	bat_init(&bat, getwidth() / 2, getheight() - 15);
+
+	//让气球移动
+	while (1)
+	{
+		BeginBatchDraw();//双缓冲解决闪烁现象
+		cleardevice();//清屏
+		//绘制背景图片
+		putimage(0, 0, &bkimg);
+		//绘制和移动气球
+		for (int i = 0; i < 15; i++)
+		{
+			ballon_moveby(balls + i, balls[i].vx, balls[i].vy);
+			ballon_draw(balls + i);
+		}
+		//绘制炮台
+		bat_draw(&bat);
+
+		draw();
+
+
+		EndBatchDraw();
+		g_score++;
+
+		//获取消息
+		ExMessage msg;
+		while (peekmessage(&msg, EM_MOUSE))
+		{
+			bat_onMessage(&bat, &msg);
+			if (msg.message == WM_LBUTTONDOWN)
+			{
+				shotBullet();
+			}
+		}
+
+		//Sleep(100);
+	}
+
+	getchar();
+	return 0;
+}
+
+--------------------------------------------------------------------------------------------------
+1、JAVA连接数据库
+
+
+package com.connect.lesson01;
+
+import com.connect.lesson02.utils.JdbcUtils;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.sql.*;
+import java.util.Properties;
+
+public class ConnectDatabase {
+    public static void main(String[]args)throws ClassNotFoundException,SQLException{
+        //1、加载驱动
+        Class.forName("com.mysql.jdbc.Driver");//固定写法
+        //2、用户信息和url
+        //useUnicode=true&characterEncoding=utf8&useSSL=true
+        String url="jdbc:mysql://120.25.170.221:3306/107Lab?useUnicode=true&characterEncoding=utf8&useSSL=true";
+        String user="107Lab";
+        String password="107Lab_2022";
+
+        //3、连接成功,返回数据库对象Connection代表数据库
+        Connection connection=DriverManager.getConnection(url,user,password);
+
+        //4、执行SQL的对象Statement执行SQL的对象
+        Statement statement=connection.createStatement();
+
+        //5、执行SQL的对象去执行SQL可能存在结果，查看返回结果
+        String sql="SELECT * FROM wangtianmeng";
+
+        ResultSet resultSet=statement.executeQuery(sql);//返回结果集,结果集中封装了所有查询出来的结果
+
+        while(resultSet.next()){
+            System.out.println("num="+resultSet.getObject("number"));
+            System.out.println("price="+resultSet.getObject("price"));
+            System.out.println("consumer="+resultSet.getObject("consumer"));
+            System.out.println("itemStatus="+resultSet.getObject("itemStatus"));
+            System.out.println("OT="+resultSet.getObject("OperationTime"));
+            System.out.println("========================================================");
+        }
+        //6、释放连接
+        resultSet.close();
+        statement.close();
+        connection.close();
+    }
+
+}
+
+2、JAVA对数据库的表增操作
+
+package com.connect.lesson02;
+
+import com.connect.lesson02.utils.JdbcUtils;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class TestInsert {
+    public static void main(String[] args) {
+
+        Connection conn = null;
+        Statement st = null;
+        ResultSet rs = null;
+
+        try {
+            conn = JdbcUtils.getConnection();//获取数据库连接
+            st = conn.createStatement();//获得SQL的执行对象
+            String sql = "INSERT INTO wangtianmeng(number, `price`,`consumer`,`itemStatus`,`OperationTime`)"+
+                    "VALUES(5,'1234','si','good','2022-07-06 10:10:10')";
+
+            int i = st.executeUpdate(sql);
+            if (i>0){
+                System.out.println("插入成功！");
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        } finally {
+            JdbcUtils.release(conn,st,rs);
+        }
+    }
+}
+
+
+3、JAVA对数据库的表删操作
+
+package com.connect.lesson02;
+
+import com.connect.lesson02.utils.JdbcUtils;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class TestDelete {
+    public static void main(String[] args) {
+
+        Connection conn = null;
+        Statement st = null;
+        ResultSet rs = null;
+
+        try {
+            conn = JdbcUtils.getConnection();//获取数据库连接
+            st = conn.createStatement();//获得SQL的执行对象
+            String sql = "DELETE FROM wangtianmeng WHERE number = 4";
+
+            int i = st.executeUpdate(sql);
+            if (i>0){
+                System.out.println("删除成功！");
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        } finally {
+            JdbcUtils.release(conn,st,rs);
+        }
+    }
+}
+
+4、JAVA对数据库的表改操作
+
+package com.connect.lesson02;
+
+import com.connect.lesson02.utils.JdbcUtils;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class TestUpdate {
+    public static void main(String[] args) {
+
+        Connection conn = null;
+        Statement st = null;
+        ResultSet rs = null;
+
+        try {
+            conn = JdbcUtils.getConnection();//获取数据库连接
+            st = conn.createStatement();//获得SQL的执行对象
+            String sql = "UPDATE wangtianmeng SET `consumer` ='liuliu',`itemStatus`='bad' WHERE number=4";
+
+            int i = st.executeUpdate(sql);
+            if (i>0){
+                System.out.println("更新成功！");
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        } finally {
+            JdbcUtils.release(conn,st,rs);
+        }
+    }
+}
+
+
+5、JAVA对数据库的表查操作
+
+package com.connect.lesson02;
+
+import com.connect.lesson02.utils.JdbcUtils;
+
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+public class TestSelect {
+    public static void main(String[] args) {
+
+        Connection conn = null;
+        Statement st = null;
+        ResultSet rs = null;
+
+        try {
+            conn = JdbcUtils.getConnection();//获取数据库连接
+            st = conn.createStatement();//获得SQL的执行对象
+            String sql = "select * from wangtianmeng where number = 5";
+
+            rs = st.executeQuery(sql);//查询完毕返回一个结果集
+            while (rs.next()){
+
+                System.out.println(rs.getString("consumer"));
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        } finally {
+            JdbcUtils.release(conn,st,rs);
+        }
+    }
+}
+
+
+
+
+
+
+
+
