@@ -1,0 +1,22 @@
+select * from family1 where name='李犇' or name ='李新文';
+select * from family1 where name='李倩' or  age=18;
+select * from family1 order by sale;
+select * from family1 order by sale desc;
+select * from family1 order by sex,sale;
+select age,sale from family1 order by 1;
+select age,sale from family1 order by 2;
+select age,sale from family1 order by sale;
+select * from family1 limit 3;
+select * from family1 limit 0,4;
+select * from family1 limit 2,4;
+select replace (name,'李','@')'姓名',
+SUBSTR(name,1,2)'取字符串'from family1;
+select now() from family1;
+select now()+1 from family1;
+select sale+IFNULL(age,0)from family1;
+select max(sale),min(sale),count(name) ,avg(sale) ,max(name),min(name) from family1;
+select name, max(sale) from family1;
+select name, min(sale) from family1;
+select age,min(sale) from family1 group by sex;
+select count(*) from family1;
+select count(1) from family1; 

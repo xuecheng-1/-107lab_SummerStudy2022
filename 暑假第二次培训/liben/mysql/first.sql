@@ -1,0 +1,15 @@
+select name from family1;
+select * from family1;
+select CONCAT(name ,sale)薪资 from family1;
+select * from family1 where age=50;
+select * from family1 where name='李犇';
+select * from family1 where sex='男';
+select * from family1 where sex !='男';
+select * from family1 where sex <>'男';
+select * from family1 where age between 10 and 30;
+select * from family1 where age in(11,18,25);
+select * from family1 where age not in(11,18,25);
+select * from family1 where age is not null;
+select * from family1 where name like '李%';
+select * from family1 where name like '%犇';
+select * from family1 where name like '————犇%';
