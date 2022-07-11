@@ -1,0 +1,94 @@
+mysql -u root -p --连接数据库
+　　1、新建用户：
+
+　　　　>CREATE USER name IDENTIFIED BY 'ssapdrow';
+
+　　2、更改密码：
+
+　　　　>SET PASSWORD FOR name=PASSWORD('fdddfd');
+
+　　3、权限管理
+
+　　　　>SHOW GRANTS FOR name;    //查看name用户权限
+
+　　　　>GRANT SELECT ON db_name.* TO name;　　　　//给name用户db_name数据库的所有权限
+
+　　　　>REVOKE SELECT ON db_name.* TO name;　　　　//GRANT的反操作，去除权限；
+
+一、数据库操作：　
+
+　　1、查看数据库：
+
+　　　　>SHOW DATABASES;
+
+　　2、创建数据库：
+
+　　　　>CREATE DATABASE db_name;　　//db_name为数据库名
+
+　　3、使用数据库：
+
+　　　　>USE db_name;
+
+　　4、删除数据库：
+
+　　　　>DROP DATABASE db_name;
+
+
+　　1、创建表：
+
+　　　　>CREATE TABLE table_name(
+
+　　　　>id TINYINT UNSIGNED NOT NULL AUTO_INCREMENT,　　　　//id值，无符号、非空、递增——唯一性，可做主键。
+
+　　　　>name VARCHAR(60) NOT NULL
+
+　　　　>score TINYINT UNSIGNED NOT NULL DEFAULT 0,　　　　//设置默认列值
+
+　　　　>PRIMARY KEY(id)
+
+　　　　>)ENGINE=InnoDB　　　　//设置表的存储引擎，一般常用InnoDB和MyISAM；InnoDB可靠，支持事务；MyISAM高效不支持全文检索
+
+　　　　>DEFAULT charset=utf8;　　//设置默认的编码，防止数据库中文乱码
+
+　　　　如果有条件的创建数据表还可以使用   >CREATE TABLE IF NOT EXISTS tb_name(........
+
+　　
+
+　　2、删除表：
+
+　　　　>DROP [ TEMPORARY ] TABLE [ IF EXISTS ] tb_name[ ,tb_name2.......];
+
+　　　　实例：
+
+　　　　>DROP TABLE IF EXISTS tb_name;
+
+
+
+三、修改表：
+
+　　1、更改表结构：
+
+　　　　>ALTER TABLE tb_name ADD[CHANGE,RENAME,DROP] ...要更改的内容...
+
+　　　　实例：
+
+　　　　>ALTER TABLE tb_name ADD COLUMN address varchar(80) NOT NULL;
+
+　　　　>ALTER TABLE tb_name DROP address;
+
+　　　　>ALTER TABLE tb_name CHANGE score score SMALLINT(4) NOT NULL;
+
+四、插入数据：
+
+　　1、插入数据：
+
+　　　　>INSERT INTO tb_name(id,name,score)VALUES(NULL,'张三',140),(NULL,'张四',178),(NULL,'张五',134);
+
+　　　　这里的插入多条数据直接在后边加上逗号，直接写入插入的数据即可；主键id是自增的列，可以不用写。
+
+　　2、插入检索出来的数据：
+
+　　　　>INSERT INTO tb_name(name,score) SELECT name,score FROM tb_name2;
+
+
+ 
