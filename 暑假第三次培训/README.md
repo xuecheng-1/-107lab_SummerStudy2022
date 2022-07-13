@@ -2,7 +2,7 @@
 
 ## 本次作业学习路线
 
-**学习javaweb
+学习javaweb
 
 学习视频：[javaweb](https://www.bilibili.com/video/BV1AS4y177xJ?spm_id_from=333.337.search-card.all.click&vd_source=6d070e5f2a4f28fd128440195fce3d9a)
 
