@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <!-- 新 Bootstrap 核心 CSS 文件 -->
+    <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="css/phd.css">
+</head>
+
+<body>
+
+    <div class="container-fluid ">
+        <div class="row header">
+            <div class="col-xs-12"><img src="img/henulogo.png"></div>
+        </div>
+        <div class="right-back">
+            <img src="img/backgroundimg.png" alt="">
+        </div>
+        <!-- 导航 -->
+        <nav class="navbar navbar-default daohang">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+        
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li ><a href="首页.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li class="dropdown active">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                                aria-expanded="false">ADMISSION <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="ad.html">Undergraduate Program</a></li>
+                                <li><a href="master.html">Master program</a></li>
+                                <li><a href="phd.html">PhD program </a></li>
+                            </ul>
+                        </li>
+                        <li><a href="re.html">RESEARCH</a></li>
+                        <li><a href="co.html">CONTACT</a></li>
+                        <li><a href="https://cs.henu.edu.cn/">CHINESE</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+        <!-- 头部 -->
+        <div class="head">
+            <div class="container ab">
+                <h1>About us</h1>
+            </div>
+        </div>
+        <!-- 表格 -->
+        <div class="container">
+            <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12 left1">
+                <div class="left">
+                    <h2>Admission</h2>
+                    <ul class="ll">
+                        <li class="active1 dropdown" role="presentation">
+                            <a data-toggle="dropdown" href="#" title="Undergraduate Program" class="dropdown-toggle"
+                                role="button" aria-haspopup="true" aria-expanded="false">Undergraduate Program<span
+                                    class="caret"></span></a>
+                            <ul class="l dropdown-menu">
+                                <li class="active1"><a href="#">Computer Science and Technology</a></li>
+                                <li><a href="#">Data Science and Big Data Technology</a></li>
+                                <li><a href="#">Information Security</a></li>
+                                <li><a href="#">Automation</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" role="presentation">
+                            <a data-toggle="dropdown" href="#" title="Master Program" class="dropdown-toggle"
+                                role="button" aria-haspopup="true" aria-expanded="false">Master Program<span
+                                    class="caret"></span></a>
+                            <ul class="l dropdown-menu">
+                                <li><a href="#">Computer Science and Technology</a></li>
+                                <li><a href="#">Software Engineering</a></li>
+                                <li><a href="#">Control Science and Engineering</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown" role="presentation">
+                            <a data-toggle="dropdown" href="#" title="PhD Program" class="dropdown-toggle" role="button"
+                                aria-haspopup="true" aria-expanded="false" style="color: red;">PhD Program<span class="caret"></span></a>
+                            <ul class="l dropdown-menu">
+                                <li><a href="#">Software Engineering</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-9 col-md-12  col-sm-12 col-xs-12 right1">
+                <div class="right">
+                    <h1>Computer Science and Technology</h1>
+                    <p style="height:10px;"></p>
+
+                <table class="table" width="100%">
+                    <tbody>
+                        <tr class="firstRow">
+                            <th class="col-lg-1 col-md-1.5 col-sm-1.5 col-xs-1.5"><strong>Course Nature</strong></th>
+                            <th class="thline col-lg-1 col-md-1.5 col-sm-1.5 col-xs-1.5"><strong>Course Code</strong></th>
+                            <th class="thline col-lg-5 col-md-7 col-sm-7 col-xs-7"><strong>Course</strong></th>
+                            <th class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><strong>Semester</strong></th>
+                            <th class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><strong>Class Hours</strong></th>
+                            <th class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><strong>Credit</strong></th>
+                            <th class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><strong>Remarks</strong></th>
+                        </tr>
+                        <tr>
+                            <td rowspan="3" class="col-lg-1 col-md-1.5 col-sm-1.5 col-xs-1.5"><a>Compulsory:Common Compulsory Course</a>
+                            </td>
+                            <td class="thline col-lg-1 col-md-1.5 col-sm-1.5 col-xs-1.5"><a>0100711001</a></td>
+                            <td class="thline col-lg-5 col-md-7 col-sm-7 col-xs-7"><a>First Foreign Language</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>1</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>36</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>2</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a></a></td>
+                        </tr>
+                        <tr>
+                            <td class="thline col-lg-1 col-md-1.5 col-sm-1.5 col-xs-1.5"><a>0103011001</a></td>
+                            <td class="thline col-lg-5 col-md-7 col-sm-7 col-xs-7"><a>The Chinese Marxism and the Contemporary</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>1</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>36</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>2</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a></a></td>
+                        </tr>
+                        <tr>
+                            <td class="thline col-lg-1 col-md-1.5 col-sm-1.5 col-xs-1.5"><a>2101211001</a></td>
+                            <td class="thline col-lg-5 col-md-7 col-sm-7 col-xs-7"><a>Comprehensive Moral Education</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>1</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>18</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>1</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a></a></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="5" class="col-lg-1 col-md-1.5 col-sm-1.5 col-xs-1.5"><a>Compulsory:Specialized Compulsory
+                                    Course</a></td>
+                            <td class="thline col-lg-1 col-md-1.5 col-sm-1.5 col-xs-1.5"><a>2101214001</a></td>
+                            <td class="thline col-lg-5 col-md-7 col-sm-7 col-xs-7"><a>Academic Activities</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a></a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>36</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>2</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a></a></td>
+                        </tr>
+                        <tr>
+                            <td class="thline col-lg-1 col-md-1.5 col-sm-1.5 col-xs-1.5"><a>2101214002</a></td>
+                            <td class="thline col-lg-5 col-md-7 col-sm-7 col-xs-7"><a>Practical Innovation</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a></a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>36</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>2</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a></a></td>
+                        </tr>
+                        <tr>
+                            <td class="thline col-lg-1 col-md-1.5 col-sm-1.5 col-xs-1.5"><a>2101214003</a></td>
+                            <td class="thline col-lg-5 col-md-7 col-sm-7 col-xs-7"><a>Matrix theory</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>1</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>54</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>3</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a></a></td>
+                        </tr>
+                        <tr>
+                            <td class="thline col-lg-1 col-md-1.5 col-sm-1.5 col-xs-1.5"><a>2101214004</a></td>
+                            <td class="thline col-lg-5 col-md-7 col-sm-7 col-xs-7"><a>Scientific Research Method and Academic Norm</a>
+                            </td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>1</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>18</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>1</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a></a></td>
+                        </tr>
+                        <tr>
+                            <td class="thline col-lg-1 col-md-1.5 col-sm-1.5 col-xs-1.5"><a>2101214005</a></td>
+                            <td class="thline col-lg-5 col-md-7 col-sm-7 col-xs-7"><a>Machine Learning</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>2</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>36</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>2</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a></a></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2" class="col-lg-1 col-md-1.5 col-sm-1.5 col-xs-1.5"><a>Selective Course:Common Selective
+                                    Course</a></td>
+                            <td class="thline col-lg-1 col-md-1.5 col-sm-1.5 col-xs-1.5"><a>0100712002</a></td>
+                            <td class="thline col-lg-5 col-md-7 col-sm-7 col-xs-7"><a>Second Foreign Language</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>1</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>36</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>2</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a></a></td>
+                        </tr>
+                        <tr>
+                            <td class="thline col-lg-1 col-md-1.5 col-sm-1.5 col-xs-1.5"><a>0103012001</a></td>
+                            <td class="thline col-lg-5 col-md-7 col-sm-7 col-xs-7"><a>Selected Readings of Classic Works of Marx, Engels
+                                    and Lenin</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>2</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>18</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>1</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a></a></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="4" class="col-lg-1 col-md-1.5 col-sm-1.5 col-xs-1.5"><a>Compulsory:Specialized Selective
+                                    Course-&gt;Non-direction</a></td>
+                            <td class="thline col-lg-1 col-md-1.5 col-sm-1.5 col-xs-1.5"><a>2101215001</a></td>
+                            <td class="thline col-lg-5 col-md-7 col-sm-7 col-xs-7"><a>Multi-Variate Statistical Analysis</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>2</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>36</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>2</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a></a></td>
+                        </tr>
+                        <tr>
+                            <td class="thline col-lg-1 col-md-1.5 col-sm-1.5 col-xs-1.5"><a>2101215002</a></td>
+                            <td class="thline col-lg-5 col-md-7 col-sm-7 col-xs-7"><a>Advanced Software Engineering</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>2</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>36</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>2</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a></a></td>
+                        </tr>
+                        <tr>
+                            <td class="thline col-lg-1 col-md-1.5 col-sm-1.5 col-xs-1.5"><a>2101215003</a></td>
+                            <td class="thline col-lg-5 col-md-7 col-sm-7 col-xs-7"><a>Algorithm Analysis and Complexity Theory</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>2</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>36</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>2</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a></a></td>
+                        </tr>
+                        <tr>
+                            <td class="thline col-lg-1 col-md-1.5 col-sm-1.5 col-xs-1.5"><a>2101215016</a></td>
+                            <td class="thline col-lg-5 col-md-7 col-sm-7 col-xs-7"><a>Frontier Topics of Software Engineering</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>2</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>36</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>2</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a></a></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3" class="col-lg-1 col-md-1.5 col-sm-1.5 col-xs-1.5"><a>Compulsory:Specialized Selective
+                                    Course-&gt;Domain Software Engineering</a></td>
+                            <td class="thline col-lg-1 col-md-1.5 col-sm-1.5 col-xs-1.5"><a>2101215004</a></td>
+                            <td class="thline col-lg-5 col-md-7 col-sm-7 col-xs-7"><a>Remote Sensing Image Processing</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>2</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>36</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>2</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a></a></td>
+                        </tr>
+                        <tr>
+                            <td class="thline col-lg-1 col-md-1.5 col-sm-1.5 col-xs-1.5"><a>2101215005</a></td>
+                            <td class="thline col-lg-5 col-md-7 col-sm-7 col-xs-7"><a>Spatial Data Mining</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>3</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>36</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>2</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a></a></td>
+                        </tr>
+                        <tr>
+                            <td class="thline col-lg-1 col-md-1.5 col-sm-1.5 col-xs-1.5"><a>2101215006</a></td>
+                            <td class="thline col-lg-5 col-md-7 col-sm-7 col-xs-7"><a>Parallel Programming</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>2</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>36</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>2</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a></a></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3" class="col-lg-1 col-md-1.5 col-sm-1.5 col-xs-1.5"><a>Compulsory:Specialized Selective
+                                    Course-&gt;Software Engineering for Embedded Systems</a></td>
+                            <td class="thline col-lg-1 col-md-1.5 col-sm-1.5 col-xs-1.5"><a>2101215007</a></td>
+                            <td class="thline col-lg-5 col-md-7 col-sm-7 col-xs-7"><a>Multi-source Information Perception and Fusion</a>
+                            </td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>2</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>36</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>2</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a></a></td>
+                        </tr>
+                        <tr>
+                            <td class="thline col-lg-1 col-md-1.5 col-sm-1.5 col-xs-1.5"><a>2101215008</a></td>
+                            <td class="thline col-lg-5 col-md-7 col-sm-7 col-xs-7"><a>Intelligent Information Processing</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>2</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>36</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>2</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a></a></td>
+                        </tr>
+                        <tr>
+                            <td class="thline col-lg-1 col-md-1.5 col-sm-1.5 col-xs-1.5"><a>2101215009</a></td>
+                            <td class="thline col-lg-5 col-md-7 col-sm-7 col-xs-7"><a>Probability Graph Model</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>2</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>36</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>2</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a></a></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3" class="col-lg-1 col-md-1.5 col-sm-1.5 col-xs-1.5"><a>Compulsory:Specialized Selective
+                                    Course-&gt;Software Engineering Technology</a></td>
+                            <td class="thline col-lg-1 col-md-1.5 col-sm-1.5 col-xs-1.5"><a>2101215010</a></td>
+                            <td class="thline col-lg-5 col-md-7 col-sm-7 col-xs-7"><a>Deep Learning</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>2</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>36</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>2</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a></a></td>
+                        </tr>
+                        <tr>
+                            <td class="thline col-lg-1 col-md-1.5 col-sm-1.5 col-xs-1.5"><a>2101215011</a></td>
+                            <td class="thline col-lg-5 col-md-7 col-sm-7 col-xs-7"><a>Techniques for Big Data Processing and
+                                    Analytics</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>3</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>36</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>2</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a></a></td>
+                        </tr>
+                        <tr>
+                            <td class="thline col-lg-1 col-md-1.5 col-sm-1.5 col-xs-1.5"><a>2101215012</a></td>
+                            <td class="thline col-lg-5 col-md-7 col-sm-7 col-xs-7"><a>Computer Vision</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>2</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>36</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>2</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a></a></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3" class="col-lg-1 col-md-1.5 col-sm-1.5 col-xs-1.5"><a>Compulsory:Specialized Selective
+                                    Course-&gt;Theory and Method of Software Engineering</a></td>
+                            <td class="thline col-lg-1 col-md-1.5 col-sm-1.5 col-xs-1.5"><a>2101215013</a></td>
+                            <td class="thline col-lg-5 col-md-7 col-sm-7 col-xs-7"><a>Formal Language and Automation</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>2</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>36</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>2</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a></a></td>
+                        </tr>
+                        <tr>
+                            <td class="thline col-lg-1 col-md-1.5 col-sm-1.5 col-xs-1.5"><a>2101215014</a></td>
+                            <td class="thline col-lg-5 col-md-7 col-sm-7 col-xs-7"><a>Formal Methods in Software Engineering</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>3</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>36</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>2</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a></a></td>
+                        </tr>
+                        <tr>
+                            <td class="thline col-lg-1 col-md-1.5 col-sm-1.5 col-xs-1.5"><a>2101215015</a></td>
+                            <td class="thline col-lg-5 col-md-7 col-sm-7 col-xs-7"><a>Content Encryption and Privacy Protection</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>2</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>36</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>2</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a></a></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2" class="col-lg-1 col-md-1.5 col-sm-1.5 col-xs-1.5"><a>Compulsory:Non- Specialized Selective
+                                    Course</a></td>
+                            <td class="thline col-lg-1 col-md-1.5 col-sm-1.5 col-xs-1.5"><a>2101225002</a></td>
+                            <td class="thline col-lg-5 col-md-7 col-sm-7 col-xs-7"><a>Advanced Artificial Intelligence</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>2</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>36</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>2</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a></a></td>
+                        </tr>
+                        <tr>
+                            <td class="thline col-lg-1 col-md-1.5 col-sm-1.5 col-xs-1.5"><a>2101225008</a></td>
+                            <td class="thline col-lg-5 col-md-7 col-sm-7 col-xs-7"><a>Pattern Recognition</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>1</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>36</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a>2</a></td>
+                            <td class="thline col-lg-0.5 col-md-0.5 col-sm-0.5 col-xs-0.5"><a></a></td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- 最后 -->
+        <div class="dilan">
+            <div class="dilan-img">
+                <img src="img/zh.png" alt="">
+            </div>
+        </div>
+        <div class="zhh">
+            <div class="container">
+                <div class="col-md-6 "><a href="#">Home</a> |<a href="#">About</a> | <a href="#">Research</a> |<a
+                        href="#">Undergraduate</a> | <a href="#">Postgraduate</a>|<a href="#">Contact</a>
+                </div>
+                <div class="col-md-6 ">
+                    <div class="zhh-r">All copyright © school of computer and information engineering henan university
+                    </div>
+                    <div class="zhh-r">Technical support: 107 Website studio</div>
+                </div>
+            </div>
+        </div>
+</body>
+<script>
+   
+
+</script>
+
+</html>
