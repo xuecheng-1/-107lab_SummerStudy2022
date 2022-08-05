@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+//点击提交按钮时，就向add组件发送一个请求，同时将表单中的数据带过去，然后打开web.xml文件
+//找到servlet-name及class，又因为请求是post，故会找到class中的dopost获取到数据
+<form action="add" method="post">
+    名称：<input type="text" name="fname"/><br>
+    价格：<input type="text" name="price"/><br>
+    库存：<input type="text" name="foount"/><br>
+    备注：<input type="text" name="remark"/><br>
+    <input type="submit" value="添加"/>
+</form>
+</body>
+</html>

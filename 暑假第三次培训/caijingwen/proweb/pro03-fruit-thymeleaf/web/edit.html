@@ -1,0 +1,37 @@
+<html xmlns:th="http://www.thymleaf.org">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/edit.css">
+
+	</head>
+	<body>
+		<div id="div_container">
+			<div id="div_fruit_list">
+				<h3 class="center f30">编辑库存信息</h3>
+				<table id="tbl_fruit">
+					<tr>
+						<th class="w20">名称:</th>
+						<td><input type="=text" name="fname" th:value=""></td>
+						</tr>
+					<tr>
+						<th class="w20">单价:</th>
+						<td><input type="=text" name="price"></td>
+						<th class="w20">库存</th>
+						<td><input type="=text" name="foount"></td>
+						</tr>
+					<tr>
+						<th class="w20">备注:</th>
+						<td><input type="=text" name="remark"></td>
+					</tr>
+					<tr>
+						<th colspan="2">
+							<input type="text" value="修改">
+						</th>
+					</tr>
+
+				</table>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

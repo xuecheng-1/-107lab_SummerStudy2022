@@ -1,0 +1,3 @@
+req:一次请求响应范围
+session：一次会话范围有效
+application：一次应用程序范围有效
