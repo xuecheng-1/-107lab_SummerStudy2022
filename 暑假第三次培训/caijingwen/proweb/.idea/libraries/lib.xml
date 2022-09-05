@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="file://F:/javaweb/00.sql和jar/01.jar/lib" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://F:/javaweb/00.sql和jar/01.jar/lib" recursive="false" />
+  </library>
+</component>

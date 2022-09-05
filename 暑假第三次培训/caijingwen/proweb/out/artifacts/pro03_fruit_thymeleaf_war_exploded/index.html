@@ -1,0 +1,33 @@
+<html xmlns:th="http://www.thymleaf.org">
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/index.css">
+
+	</head>
+	<body>
+		<div id="div_container">
+			<div id="div_fruit_list">
+				<h3 class="center f30">欢迎使用水果库存后台管理系统</h3>
+				<table id="tbl_fruit">
+					<tr>
+						<th class="w20">名称6</th>
+						<th class="w20">单价</th>
+						<th class="w20">库存</th>
+						<th>操作</th>
+					</tr>
+					<tr th:if="${#lists.isEmpty(session.fruitList)}">
+						<td colspan="4">对不起，库存为空！</td>
+					</tr>
+					<tr th:unless="${#lists.isEmpty(session.fruitList)}" th:each="fruit :${session.fruitList}">
+<!--						<td><a th:text="${fruit.fname}" th:href="@{'/edit.do?fid='+${fruit.fid}}" >苹果</a></td>-->
+						<td><a th:text="${fruit.fname}" th:href="@{/edit.do(fid=${fruit.fid})}" >苹果</a></td>
+						<td th:text="${fruit.price}">5</td>
+						<td th:text="${fruit.fcount}">20</td>
+						<td><img src="imgs/del.jpg" class="delImg"/></td>
+					</tr>
+				</table>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

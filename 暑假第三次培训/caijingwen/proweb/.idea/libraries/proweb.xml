@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="proweb">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/Pro-02-servlet/src" />
+      <root url="file://$PROJECT_DIR$/pro01/src" />
+    </SOURCES>
+  </library>
+</component>
